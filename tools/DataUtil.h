@@ -1,6 +1,7 @@
 #pragma once
 
-#include "SingletonTemplate.h"
+#include <vector>
+#include "../patterns/SingletonTemplate.h"
 
 class DataUtil : public SingletonTemplate<DataUtil>
 {
@@ -10,6 +11,6 @@ public:
 
     int getRandomValue(const int& min, const int& max);
     double getRandomValue(const double& min, const double& max);
-    vector<std::string> split(const std::string& str, char delim);
+    std::vector<std::string> split(const std::string& str, char delim);
 };
 
